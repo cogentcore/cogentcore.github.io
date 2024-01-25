@@ -2,7 +2,7 @@ module github.com/cogentcore/cogentcore.github.io
 
 go 1.21
 
-require cogentcore.org/core v0.0.2-0.20240117052545-1c0f42d9034e
+require cogentcore.org/core v0.0.3-0.20240125061133-0fa8a0e84f1b
 
 require (
 	github.com/Masterminds/vcs v1.13.3 // indirect
@@ -14,8 +14,8 @@ require (
 	github.com/fatih/camelcase v1.0.0 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.3 // indirect
-	github.com/go-gl/glfw/v3.3/glfw v0.0.0-20240108052320-294b0144ba39 // indirect
-	github.com/goki/freetype v1.0.1 // indirect
+	github.com/go-gl/glfw/v3.3/glfw v0.0.0-20240118000515-a250818d05e3 // indirect
+	github.com/goki/freetype v1.0.2 // indirect
 	github.com/goki/vulkan v1.0.7 // indirect
 	github.com/gorilla/css v1.0.1 // indirect
 	github.com/h2non/filetype v1.1.3 // indirect
@@ -23,12 +23,12 @@ require (
 	github.com/hack-pad/hackpadfs v0.2.1 // indirect
 	github.com/hack-pad/safejs v0.1.1 // indirect
 	github.com/iancoleman/strcase v0.3.0 // indirect
+	github.com/jinzhu/copier v0.4.0 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-runewidth v0.0.15 // indirect
 	github.com/muesli/termenv v0.15.2 // indirect
 	github.com/pelletier/go-toml/v2 v2.1.1 // indirect
-	github.com/pkg/errors v0.9.1 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
 	golang.org/x/image v0.15.0 // indirect
 	golang.org/x/net v0.20.0 // indirect
