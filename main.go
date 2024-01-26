@@ -7,7 +7,7 @@ package main
 import "cogentcore.org/core/gi"
 
 func main() {
-	b := gi.NewAppBody("Cogent Core")
+	b := gi.NewBody("Cogent Core")
 	gi.NewLabel(b).SetType(gi.LabelHeadlineLarge).SetText("Cogent Core")
 	gi.NewLabel(b).SetText("A free and open source software ecosystem for all platforms, built around a powerful, fast, and cogent core framework allowing you to Code Once, Run Everywhere.")
 	b.RunMainWindow()
