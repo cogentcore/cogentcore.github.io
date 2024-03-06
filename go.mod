@@ -1,6 +1,6 @@
 module github.com/cogentcore/cogentcore.github.io
 
-go 1.21
+go 1.22
 
 require cogentcore.org/core v0.0.5-0.20240211024526-79faee241429
 
