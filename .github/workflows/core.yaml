@@ -40,7 +40,7 @@ jobs:
           go-version: '1.22'
 
       - name: Install Core
-        run: go install cogentcore.org/core/core@main
+        run: go install cogentcore.org/core/cmd/core@main
 
       - name: Build App
         run: core build web && cp -a bin/web/* .

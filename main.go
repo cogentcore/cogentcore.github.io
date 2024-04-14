@@ -4,11 +4,11 @@
 
 package main
 
-import "cogentcore.org/core/gi"
+import "cogentcore.org/core/core"
 
 func main() {
-	b := gi.NewBody("Cogent Core")
-	gi.NewLabel(b).SetType(gi.LabelHeadlineLarge).SetText("Cogent Core")
-	gi.NewLabel(b).SetText("A free and open source software ecosystem for all platforms, built around a powerful, fast, and cogent core framework allowing you to Code Once, Run Everywhere.")
+	b := core.NewBody("Cogent Core")
+	core.NewLabel(b).SetType(core.LabelHeadlineLarge).SetText("Cogent Core")
+	core.NewLabel(b).SetText("A free and open source software ecosystem for all platforms, built around a powerful, fast, and cogent core framework allowing you to Code Once, Run Everywhere.")
 	b.RunMainWindow()
 }
