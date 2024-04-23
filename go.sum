@@ -1,5 +1,5 @@
-cogentcore.org/core v0.1.0 h1:fJjpk7jd77IIUCDoauwukOeTVsWU+SuDyIhDXb3PYTM=
-cogentcore.org/core v0.1.0/go.mod h1:SAJedgd5nd0iB2cHl//DyCO+rugd/u7KCHXHNjnQOmA=
+cogentcore.org/core v0.1.1-0.20240423195502-763c53deb008 h1:Ze0AlfL8vQUbh7bNat1HNxrOSn8CQrCHUtAa7+3gj7U=
+cogentcore.org/core v0.1.1-0.20240423195502-763c53deb008/go.mod h1:5yCVwy5wKTkGvcTYDFo4ZN40WUEP/wxHSvBNicsPyi8=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/anthonynsimon/bild v0.13.0 h1:mN3tMaNds1wBWi1BrJq0ipDBhpkooYfu7ZFSMhXt1C8=
 github.com/anthonynsimon/bild v0.13.0/go.mod h1:tpzzp0aYkAsMi1zmfhimaDyX1xjn2OUc1AJZK/TF0AE=
@@ -75,8 +75,8 @@ golang.org/x/crypto v0.0.0-20181203042331-505ab145d0a9/go.mod h1:6SG95UA2DQfeDnf
 golang.org/x/image v0.0.0-20190703141733-d6a02ce849c9/go.mod h1:FeLwcggjj3mMvU+oOTbSwawSJRM1uh48EjtB4UJZlP0=
 golang.org/x/image v0.15.0 h1:kOELfmgrmJlw4Cdb7g/QGuB3CvDrXbqEIww/pNtNBm8=
 golang.org/x/image v0.15.0/go.mod h1:HUYqC05R2ZcZ3ejNQsIHQDQiwWM4JBqmm6MKANTp4LE=
-golang.org/x/net v0.22.0 h1:9sGLhx7iRIHEiX0oAJ3MRZMUCElJgy7Br1nO+AMN3Tc=
-golang.org/x/net v0.22.0/go.mod h1:JKghWKKOSdJwpW2GEx0Ja7fmaKnMsbu+MWVZTokSYmg=
+golang.org/x/net v0.23.0 h1:7EYJ93RZ9vYSZAIb2x3lnuvqO5zneoD6IvWjuhfxjTs=
+golang.org/x/net v0.23.0/go.mod h1:JKghWKKOSdJwpW2GEx0Ja7fmaKnMsbu+MWVZTokSYmg=
 golang.org/x/sys v0.0.0-20181205085412-a5c9d58dba9a/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
 golang.org/x/sys v0.18.0 h1:DBdB3niSjOA/O0blCZBqDefyWNYveAYMNF1Wum0DYQ4=
 golang.org/x/sys v0.18.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=
