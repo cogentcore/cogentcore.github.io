@@ -1,5 +1,5 @@
-cogentcore.org/core v0.1.1-0.20240423195502-763c53deb008 h1:Ze0AlfL8vQUbh7bNat1HNxrOSn8CQrCHUtAa7+3gj7U=
-cogentcore.org/core v0.1.1-0.20240423195502-763c53deb008/go.mod h1:5yCVwy5wKTkGvcTYDFo4ZN40WUEP/wxHSvBNicsPyi8=
+cogentcore.org/core v0.1.1-0.20240428004521-ab5347730051 h1:9IEe20sFdEu3DIoL4EAMdeWFLEJ4OTXLhQeCF5MfHPE=
+cogentcore.org/core v0.1.1-0.20240428004521-ab5347730051/go.mod h1:civGK+IuQZjq53w8eSxupM6fRyDB7m/irEeVKztMPB8=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/anthonynsimon/bild v0.13.0 h1:mN3tMaNds1wBWi1BrJq0ipDBhpkooYfu7ZFSMhXt1C8=
 github.com/anthonynsimon/bild v0.13.0/go.mod h1:tpzzp0aYkAsMi1zmfhimaDyX1xjn2OUc1AJZK/TF0AE=
