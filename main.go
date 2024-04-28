@@ -4,12 +4,41 @@
 
 package main
 
-import "cogentcore.org/core/core"
+import (
+	"embed"
+
+	"cogentcore.org/core/base/errors"
+	"cogentcore.org/core/core"
+	"cogentcore.org/core/events"
+	"cogentcore.org/core/styles"
+	"cogentcore.org/core/styles/units"
+)
+
+//go:embed icon.svg name.png
+var resources embed.FS
 
 func main() {
 	b := core.NewBody("Cogent Core")
-	core.NewText(b).SetType(core.TextHeadlineLarge).SetText("Cogent Core")
-	core.NewText(b).SetText("A free and open source software ecosystem for all platforms, built around a powerful, fast, and elegant framework allowing you to Code Once, Run Everywhere.")
-	core.NewText(b).SetText(`See <a href="https://cogentcore.org/core">core</a> for more information.`)
+
+	frame := core.NewFrame(b).Style(func(s *styles.Style) {
+		s.Direction = styles.Column
+		s.CenterAll()
+	})
+	errors.Log(core.NewSVG(frame).OpenFS(resources, "icon.svg"))
+	img := core.NewImage(frame)
+	errors.Log(img.OpenFS(resources, "name.png"))
+	img.Style(func(s *styles.Style) {
+		x := func(uc *units.Context) float32 {
+			return min(uc.Dp(612), uc.Vw(90))
+		}
+		s.Min.Set(units.Custom(x), units.Custom(func(uc *units.Context) float32 {
+			return x(uc) * (128.0 / 612.0)
+		}))
+	})
+	core.NewText(frame).SetType(core.TextHeadlineMedium).SetText("A free and open source software ecosystem for all platforms, built around a powerful, fast, and elegant framework")
+	core.NewButton(frame).SetText("Learn about the Cogent Core framework").OnClick(func(e events.Event) {
+		core.TheApp.OpenURL("https://cogentcore.org/core")
+	})
+
 	b.RunMainWindow()
 }
