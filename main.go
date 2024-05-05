@@ -14,7 +14,7 @@ import (
 	"cogentcore.org/core/styles/units"
 )
 
-//go:embed icon.svg name.png
+//go:embed name.png
 var resources embed.FS
 
 func main() {
@@ -24,7 +24,7 @@ func main() {
 		s.Direction = styles.Column
 		s.CenterAll()
 	})
-	errors.Log(core.NewSVG(frame).OpenFS(resources, "icon.svg"))
+	errors.Log(core.NewSVG(frame).ReadString(core.AppIcon))
 	img := core.NewImage(frame)
 	errors.Log(img.OpenFS(resources, "name.png"))
 	img.Style(func(s *styles.Style) {
