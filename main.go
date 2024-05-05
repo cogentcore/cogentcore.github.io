@@ -35,7 +35,7 @@ func main() {
 			return x(uc) * (128.0 / 612.0)
 		}))
 	})
-	core.NewText(frame).SetType(core.TextHeadlineMedium).SetText("A free and open source software ecosystem for all platforms, built around a powerful, fast, and elegant framework")
+	core.NewText(frame).SetType(core.TextHeadlineMedium).SetText(core.AppAbout)
 	core.NewButton(frame).SetText("Learn about the Cogent Core framework").OnClick(func(e events.Event) {
 		core.TheApp.OpenURL("https://cogentcore.org/core")
 	})
