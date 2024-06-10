@@ -20,14 +20,14 @@ var resources embed.FS
 func main() {
 	b := core.NewBody("Cogent Core")
 
-	frame := core.NewFrame(b).Style(func(s *styles.Style) {
+	frame := core.NewFrame(b).Styler(func(s *styles.Style) {
 		s.Direction = styles.Column
 		s.CenterAll()
 	})
 	errors.Log(core.NewSVG(frame).ReadString(core.AppIcon))
 	img := core.NewImage(frame)
 	errors.Log(img.OpenFS(resources, "name.png"))
-	img.Style(func(s *styles.Style) {
+	img.Styler(func(s *styles.Style) {
 		x := func(uc *units.Context) float32 {
 			return min(uc.Dp(612), uc.Vw(90))
 		}
