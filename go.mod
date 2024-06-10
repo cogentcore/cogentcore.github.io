@@ -2,7 +2,7 @@ module github.com/cogentcore/cogentcore.github.io
 
 go 1.22
 
-require cogentcore.org/core v0.1.1-0.20240428004521-ab5347730051
+require cogentcore.org/core v0.1.5-0.20240610030407-10ccd233a126
 
 require (
 	github.com/anthonynsimon/bild v0.13.0 // indirect
