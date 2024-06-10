@@ -22,6 +22,7 @@ func main() {
 
 	frame := core.NewFrame(b).Styler(func(s *styles.Style) {
 		s.Direction = styles.Column
+		s.Grow.Set(1, 1)
 		s.CenterAll()
 	})
 	errors.Log(core.NewSVG(frame).ReadString(core.AppIcon))
