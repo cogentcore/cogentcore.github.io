@@ -20,7 +20,8 @@ var resources embed.FS
 func main() {
 	b := core.NewBody("Cogent Core")
 
-	frame := core.NewFrame(b).Styler(func(s *styles.Style) {
+	frame := core.NewFrame(b)
+	frame.Styler(func(s *styles.Style) {
 		s.Direction = styles.Column
 		s.Grow.Set(1, 1)
 		s.CenterAll()
