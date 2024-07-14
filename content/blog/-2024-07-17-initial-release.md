@@ -118,7 +118,9 @@ In the remainder of this blog, we provide some commentary about how we think Cog
 
 ### Javascript + HTML + CSS Frameworks
 
-Most of the world's GUI software is written in some version of this stack..
+Most of the world's GUI software is written using some web framework.
+
+* Everything is built on some version of JS, HTML, and (S)CSS, all of which are poorly designed and
 
 * basic widgets significantly lacking: takes huge amount of time and effort to code a basic slider or spinner.  so much CSS garbage.. Kai, take it away here..
 
