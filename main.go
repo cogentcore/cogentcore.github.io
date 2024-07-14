@@ -11,9 +11,11 @@ import (
 	"cogentcore.org/core/core"
 	"cogentcore.org/core/events"
 	"cogentcore.org/core/htmlcore"
+	"cogentcore.org/core/icons"
 	"cogentcore.org/core/pages"
 	"cogentcore.org/core/styles"
 	"cogentcore.org/core/styles/units"
+	"cogentcore.org/core/tree"
 )
 
 //go:embed name.png
@@ -26,6 +28,20 @@ func main() {
 	b := core.NewBody("Cogent Core")
 	pg := pages.NewPage(b).SetContent(content)
 	b.AddAppBar(pg.MakeToolbar)
+	b.AddAppBar(func(p *tree.Plan) {
+		tree.Add(p, func(w *core.Button) {
+			w.SetText("Blog").SetIcon(icons.RssFeed)
+			w.OnClick(func(e events.Event) {
+				pg.Context.OpenURL("/blog")
+			})
+		})
+		tree.Add(p, func(w *core.Button) {
+			w.SetText("GitHub").SetIcon(icons.GitHub)
+			w.OnClick(func(e events.Event) {
+				pg.Context.OpenURL("https://github.com/cogentcore")
+			})
+		})
+	})
 
 	htmlcore.ElementHandlers["home-page"] = func(ctx *htmlcore.Context) bool {
 		frame := core.NewFrame(ctx.BlockParent)
