@@ -72,13 +72,15 @@ pe.ColumnOptions("Population").On = true
 
 ## Key Features
 
+* Extensive standards-based styling properties enable everything to be customized, including powerful automatic layout system that solves all the hard problems for you.  should be familiar to anyone coming from HTML / CSS world.
+
 * Vulkan for high performance 2D and 3D rendering
 
 * Full-featured SVG for 2D rendering and icons
 
-* Extensive standards-based styling properties enable everything to be customized, including powerful automatic layout system that solves all the hard problems for you.  should be familiar to anyone coming from HTML / CSS world.
+* Powerful HCT color space integrated throughout: allows instant light / dark and alternate color scheme customization.
 
-* Powerful HCT color space integrated throughout: allows instant light / dark and alternate colorscheme customization.
+* Efficient mechanism for dynamically updating content that captures the best of imperative and declarative mode programming.
 
 * Focus on efficient keyboard navigation and customizable mappings, with full support for emacs mode.
 
