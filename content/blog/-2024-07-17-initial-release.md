@@ -124,8 +124,7 @@ Most of the world's GUI software is written in some version of this stack..
 
 ### Platform-specific frameworks
 
-Most mobile apps are written using tools optimized for each of the two major mobile platforms (iOS and Android), requiring significant duplication of effort, and mastery of vastly different software ecosystems (Swift / objective C vs. Java).  By contrast, Cogent Core allows you to truly write one app in one language, and have it work well on both platforms (Core = "code once, run everywhere!").
-
+Most mobile apps are written using tools optimized for each of the two major mobile platforms (iOS and Android), requiring significant duplication of effort, and mastery of vastly different software ecosystems (Swift/Objective-C vs. Java).  By contrast, Cogent Core allows you to truly write one app in one language, and have it work well on both platforms (Core = "code once, run everywhere!").
 
 ### Flutter
 
@@ -135,9 +134,6 @@ Most mobile apps are written using tools optimized for each of the two major mob
 
 ### Go GUIs: Fyne and Gio
 
-* Fyne is "fine" but we found it lacking in a number of areas: styling, complex widgets, etc..
+* Fyne is "fine" overall, but it lacks the support for customization and complexity that is necessary to build powerful real-world apps.
 
-* Gio has a very powerful set of platform-specific backend code, but the low-level nature of the immediate-mode design makes it very difficult to develop complex, large-scale appliations.
-
-
-
+* Gio has a very powerful set of platform-specific backend code, but the low-level nature of the immediate-mode design makes it very difficult to develop complex, large-scale applications, since there are too many steps to accomplish things.
