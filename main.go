@@ -16,6 +16,7 @@ import (
 	"cogentcore.org/core/styles"
 	"cogentcore.org/core/styles/units"
 	"cogentcore.org/core/tree"
+	_ "cogentcore.org/core/yaegicore"
 )
 
 //go:embed name.png
