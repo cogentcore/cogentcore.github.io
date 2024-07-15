@@ -2,7 +2,7 @@ module github.com/cogentcore/cogentcore.github.io
 
 go 1.22
 
-require cogentcore.org/core v0.2.3-0.20240715055145-52654758365b
+require cogentcore.org/core v0.2.3-0.20240715194410-a2313f0daa09
 
 require (
 	github.com/Bios-Marcel/wastebasket v0.0.4-0.20240213135800-f26f1ae0a7c4 // indirect
@@ -18,6 +18,7 @@ require (
 	github.com/go-gl/glfw/v3.3/glfw v0.0.0-20240307211618-a69d953ea142 // indirect
 	github.com/goki/freetype v1.0.5 // indirect
 	github.com/goki/vulkan v1.0.7 // indirect
+	github.com/gomarkdown/markdown v0.0.0-20240626202925-2eda941fd024 // indirect
 	github.com/gorilla/css v1.0.1 // indirect
 	github.com/h2non/filetype v1.1.3 // indirect
 	github.com/hack-pad/go-indexeddb v0.3.2 // indirect
@@ -26,8 +27,6 @@ require (
 	github.com/jinzhu/copier v0.4.0 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.1.2-0.20240227203013-2b69615b5d55 // indirect
-	github.com/yuin/goldmark v1.7.3 // indirect
-	go.abhg.dev/goldmark/wikilink v0.5.0 // indirect
 	golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa // indirect
 	golang.org/x/image v0.18.0 // indirect
 	golang.org/x/mod v0.18.0 // indirect
