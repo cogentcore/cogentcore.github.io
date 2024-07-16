@@ -48,6 +48,12 @@ func main() {
 				pg.Context.OpenURL("https://github.com/cogentcore")
 			})
 		})
+		tree.Add(p, func(w *core.Button) {
+			w.SetText("Contact").SetIcon(icons.Mail)
+			w.OnClick(func(e events.Event) {
+				core.MessageDialog(w, "contact@cogentcore.org", "Contact us via email at")
+			})
+		})
 	})
 
 	htmlcore.ElementHandlers["home-page"] = func(ctx *htmlcore.Context) bool {
