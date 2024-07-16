@@ -1,5 +1,3 @@
-# Initial release
-
 Today we are announcing the initial public beta release of the Cogent Core GUI framework. Cogent Core prioritizes the ability to Code Once, Run Everywhere (Core), and indeed you are reading this blog in a Cogent Core app running on the web via wasm (web assembly). The same code can run on macOS, Windows, Linux, iOS, Android, and the Web through a `core` command line tool that manages all the details for running and building apps for each of those different platforms.
 
 Cogent Core is written in Go (Golang), and inherits many of its best features from this amazing language and its associated ecosystem. Go code is simple, easy to read and write, and emphasizes a minimalist approach that eschews as much of the extra syntax and boilerplate stuff that clutters so many other languages.
