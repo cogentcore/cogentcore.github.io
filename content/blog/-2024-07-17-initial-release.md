@@ -16,7 +16,7 @@ func main() {
 }
 ```
 
-See that "Hello, World!" button up there? That is a live rendering of the code shown in the text editor above. You can change the message, press `Control+Enter` or just click off, and you'll see it update!
+See that "Hello, World!" button up there? That is a live rendering of the code shown in the text editor above. You can change the message, press `Ctrl+Enter` or just click off, and you'll see it update!
 
 Cogent Core supports all the usual types of GUI widgets, along with some fairly advanced ones not found in other frameworks. We encourage a trip to the main [docs](https://www.cogentcore.org/core) page, which provides interactive, editable examples of all major widgets (it is also a Cogent Core app running via wasm).
 
@@ -96,13 +96,13 @@ The only thing missing from the Go ecosystem at the time was a full-featured nat
 
 Meanwhile, Randy's son Kai was busy experimenting with lots of different frameworks and languages for various coding projects, and eventually came to the same conclusion, that Go is truly the best language around. After exploring the various existing GUI frameworks in Go, Kai came to the conclusion that a major overhaul of GoKi might end up producing a better framework than any of the other options.
 
-So the father and son team (more son than father, to be clear) spent the next year rewriting this codebase many times over, peeling away layers of complexity and finding the most robust and elegant solutions to the many problems such a framework must solve. The [Principles](https://cogentcore.org/core/architecture/principles) capture some of our hard-won lessons learned, and we hope that the experience of using this framework demonstrates the resulting simplicity and power of the approach.
+So the father and son team (more son than father, to be clear) spent the next year rewriting this codebase many times over, peeling away layers of complexity and finding the most robust and elegant solutions to the many problems such a framework must solve. The [principles](https://cogentcore.org/core/architecture/principles) capture some of our hard-won lessons learned, and we hope that the experience of using this framework demonstrates the resulting simplicity and power of the approach.
 
 As a young and ambitious programmer, Kai has many plans for future apps to program in the Cogent Core framework, and Randy continues to develop his neural network models for research and teaching. Throughout the process, Randy has maintained what is now Cogent Code as his primary everyday code editor, and the new versions of the neural network models are also well tested. Therefore, we are confident that the core of the framework is solid and ready to use at this point, even as we continue to build out more features and welcome input from the broader community for how to make it even better.
 
 We are excited to build toward a world-class GUI framework in our beloved Go language, and hope this excitement is sufficiently contagious to grow a vibrant community of users and developers. We think Go is such a special language that it deserves to be used for everything and anything, outside of its traditional role as a server-side and cli-based workhorse.
 
-We each have a long-term commitment to the future of this framework.  Randy and his many colleagues around the world rely on it for research and teaching.  Kai is available for consulting projects to develop Cogent Core solutions, and has long-term plans to build a career around this framework.
+We each have a long-term commitment to the future of this framework. Randy and his many colleagues around the world rely on it for research and teaching. Kai is available for consulting projects to develop Cogent Core solutions, and has long-term plans to build a career around this framework.
 
 ## Future directions
 
