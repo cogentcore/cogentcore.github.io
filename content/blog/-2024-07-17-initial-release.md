@@ -31,11 +31,13 @@ core.NewButton(b).SetText("Hello, World!").SetIcon(icons.Send).OnClick(func(e ev
 core.NewText(b).SetText("Name:").SetTooltip("Enter your name in the text field")
 core.NewTextField(b).SetPlaceholder("Jane Doe")
 value := float32(0.5)
-spin := core.Bind(&value, core.NewSpinner(b))
-slide := core.NewSlider(b)
-spin.OnChange(func (e events.Event) {
-    slide.SetValue(value)
-    slide.Update()
+spinner := core.Bind(&value, core.NewSpinner(b))
+slider := core.Bind(&value, core.NewSlider(b))
+spinner.OnChange(func(e events.Event) {
+    slider.Update()
+})
+slider.OnChange(func(e events.Event) {
+    spinner.Update()
 })
 core.NewColorButton(b).SetColor(colors.Orange)
 
