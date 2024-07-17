@@ -1,6 +1,6 @@
-Today we are announcing the initial public beta release of the Cogent Core GUI framework. Cogent Core prioritizes the ability to Code Once, Run Everywhere (Core), and indeed you are reading this blog in a Cogent Core app running on the web via wasm (web assembly). The same code can run on macOS, Windows, Linux, iOS, Android, and the Web through a `core` command line tool that manages all the details for running and building apps for each of those different platforms.
+Today we are announcing the initial public release of the Cogent Core GUI framework. Cogent Core prioritizes the ability to Code Once, Run Everywhere (Core). You are reading this blog in a Cogent Core app running on the web via wasm (web assembly). The same code can run on macOS, Windows, Linux, iOS, Android, and the web, through a `core` command line tool that manages all the details for running and building apps for each platform.
 
-Cogent Core is written in Go (Golang), and inherits many of its best features from this amazing language and its associated ecosystem. Go code is simple, easy to read and write, and emphasizes a minimalist approach that eschews as much of the extra syntax and boilerplate stuff that clutters so many other languages.
+Cogent Core is written in Go (Golang), and inherits many of the best features from this language and its associated ecosystem. Go code is simple, easy to read and write, and emphasizes a minimalist approach without the extra syntax and boilerplate that clutters other languages.
 
 Here's a simple hello world app in Cogent Core:
 
@@ -16,11 +16,11 @@ func main() {
 }
 ```
 
-See that "Hello, World!" button up there? That is a live rendering of the code shown in the text editor above. You can change the message, press `Ctrl+Enter` or just click off, and you'll see it update!
+See that "Hello, World!" button? That is a live rendering of the code shown in the text editor above. You can change the message, press `Ctrl+Enter` or just click off, and you'll see it update!
 
-Cogent Core supports all the usual types of GUI widgets, along with some fairly advanced ones not found in other frameworks. We encourage a trip to the main [docs](https://www.cogentcore.org/core) page, which provides interactive, editable examples of all major widgets (it is also a Cogent Core app running via wasm).
+Cogent Core supports all the usual types of GUI widgets, along with some fairly advanced ones not found in other frameworks. Interactive, editable examples of all major widgets are available on the main [docs](https://www.cogentcore.org/core) page. (which is also a Cogent Core app running via wasm).
 
-Here's a small sample of some of the widgets, and a few things you can do with them:
+Here's a small sample of widgets, and a few things you can do with them:
 
 ```Go
 core.NewButton(b).SetText("Hello, World!").SetIcon(icons.Send).OnClick(func(e events.Event) {
@@ -72,7 +72,7 @@ pe.ColumnOptions("Population").On = true
 
 ## Key Features
 
-* Extensive styling properties allow everything to be customized, including a powerful automatic layout system that solves all the hard layout problems for you. Anyone coming from the CSS world should be able to quickly adapt.
+* Extensive styling properties allow everything to be customized, including a powerful automatic layout system that solves all the hard layout problems for you. Anyone coming from the CSS world should be able to quickly adapt, and others {insert something to appeal to people not coming from the CSS world}
 
 * Vulkan for high performance 2D and 3D rendering
 
@@ -88,21 +88,21 @@ pe.ColumnOptions("Population").On = true
 
 ## Our Story
 
-Here's a bit of background about where Cogent Core came from and where we want it to go in the future, and why we are committed to supporting it and growing a full software ecosystem around it.
+We are committed to supporting Cogent Core and growing a full software ecosystem around it, building on where Cogent Core came from and where we want it to go.
 
-The initial version of this software was named [GoKi](https://github.com/goki/gi), and it was written in 2018 by Professor Randy O'Reilly to enable him to develop advanced [neural network models](https://emersim.org) of the brain using Go, instead of C++. He had grown increasingly frustrated with the long build times and tiresome boilerplate involved in coding in C++. At that time, Python was starting to become increasingly popular, but it is really just a wrapper around the same dreaded C++, resulting in a complex and unpleasant combination of two languages. Go, by contrast, compiles nearly instantly, and runs nearly as fast as C++. The small difference in compute time (less than 5-10%) was more than made up for by the massive increase in coding efficiency and overall happiness from using Go.
+The initial version of this software was named [GoKi](https://github.com/goki/gi). It was written in 2018 by Professor Randy O'Reilly to enable him to develop advanced [neural network models](https://emersim.org) of the brain using Go, instead of C++. He had grown frustrated with the long build times and tiresome boilerplate involved in coding in C++. At that time, Python was becoming increasingly popular, but it is really just a wrapper around C++, resulting in a complex and unpleasant combination of two languages. Go, by contrast, compiles nearly instantly, and runs nearly as fast as C++. The small difference in compute time (less than 5-10%) was more than made up for by the massive increase in coding efficiency and overall happiness from using Go.
 
-The only thing missing from the Go ecosystem at the time was a full-featured native GUI framework, so Randy built on his extensive experience with [Qt](https://en.wikipedia.org/wiki/Qt_(software)) to write one in Go. Overall, GoKi provided a powerful 2D and 3D interface that enabled experts, as well as novice undergraduate students in various classes taught around the world, to better understand and develop new ideas about how the brain works. However, as a first effort in Go, GoKi retained too much of the C++ style, and many important lessons were learned in getting everything to work.
+The only thing missing from the Go ecosystem at the time was a full-featured native GUI framework, so Randy built on his experience with [Qt](https://en.wikipedia.org/wiki/Qt_(software)) to write one in Go. GoKi provided a powerful 2D and 3D interface that enabled experts, as well as undergraduate and graduate students in classes taught by professors around the world, to better understand and develop new ideas about how the brain works. However, as a first effort in Go, GoKi retained too much of the C++ style.
 
-Meanwhile, Randy's son Kai was busy experimenting with lots of different frameworks and languages for various coding projects, and eventually came to the same conclusion, that Go is truly the best language around. After exploring the various existing GUI frameworks in Go, Kai came to the conclusion that a major overhaul of GoKi might end up producing a better framework than any of the other options.
+Meanwhile, Randy's son Kai was busy experimenting with different frameworks and languages for various coding projects. He eventually came to the same conclusion that Go is truly the best language around. After exploring existing GUI frameworks in Go, Kai decided that a major overhaul of GoKi might produce a better framework than any of the other options.
 
-So the father and son team (more son than father, to be clear) spent the next year rewriting this codebase many times over, peeling away layers of complexity and finding the most robust and elegant solutions to the many problems such a framework must solve. The [principles](https://cogentcore.org/core/architecture/principles) capture some of our hard-won lessons learned, and we hope that the experience of using this framework demonstrates the resulting simplicity and power of the approach.
+So the father and son team (more son than father, to be clear) spent the next year rewriting this codebase many times over, peeling away layers of complexity and finding the most robust and elegant solutions to the many problems such a framework must solve. The [principles](https://cogentcore.org/core/architecture/principles) capture some of our hard-won lessons. We hope that the experience of using this framework demonstrates the resulting simplicity and power of the approach.
 
-As a young and ambitious programmer, Kai has many plans for future apps to program in the Cogent Core framework, and Randy continues to develop his neural network models for research and teaching. Throughout the process, Randy has maintained what is now Cogent Code as his primary everyday code editor, and the new versions of the neural network models are also well tested. Therefore, we are confident that the core of the framework is solid and ready to use at this point, even as we continue to build out more features and welcome input from the broader community for how to make it even better.
+Throughout this process, Randy maintained what is now Cogent Code as his primary everyday code editor, and the neural network models based on this framework were used by {convey the breadth of users in a non-redundant way}. Therefore, the core of the framework is well-tested and ready to use, even as we continue to build out more features and welcome input from the broader community for how to make it even better.
 
-We are excited to build toward a world-class GUI framework in our beloved Go language, and hope this excitement is sufficiently contagious to grow a vibrant community of users and developers. We think Go is such a special language that it deserves to be used for everything and anything, outside of its traditional role as a server-side and cli-based workhorse.
+We each have a long-term commitment to the future of the Cogent Core framework. Randy and other scientists and instructors rely on it for research and teaching. Kai plans to build his career around the framework. He is programming apps in it and is available for consulting projects to develop Cogent Core solutions.
 
-We each have a long-term commitment to the future of this framework. Randy and his many colleagues around the world rely on it for research and teaching. Kai is available for consulting projects to develop Cogent Core solutions, and has long-term plans to build a career around this framework.
+We think Go is such a special language that it deserves to be used for everything and anything, far beyond its traditional role as a server-side and cli-based workhorse. We hope that the excitement of building toward a world-class GUI framework in our beloved Go language will grow a vibrant community of users and developers.
 
 ## Future directions
 
@@ -110,13 +110,13 @@ One important future direction, evident in the interactive editing ability shown
 
 Furthermore, we have written a shell language variant of Go, called `cosh` (Cogent Shell), which allows direct intermixing of shell-like execution of command-line tools, with standard Go control constructs, using the yaegi interpreter. Everything can be transpiled into standard Go and built the usual way as a fully compiled executable as well. Next, we plan to extend this general approach to the numerical computing and data science domain, in the Cogent Numbers framework, to provide a viable competitor in this Python-dominated domain.
 
-In addition, we will be completing the Cogent Canvas app, which provides editing of SVG-based vector graphics, and the Cogent Mail client. We also plan to make a video editing app, and even keep plugging away at a web browser!
+In addition, we will be completing the Cogent Canvas app, which provides editing of SVG-based vector graphics, and the Cogent Mail client. We also plan to make a video editing app and are working on a web browser.
 
-## Comparisons with other Frameworks
+## Comparisons with other frameworks
 
 In the remainder of this blog, we provide some commentary about how we think Cogent Core compares with various other widely-used GUI frameworks and languages. As you can tell if you've read this far, we think the Go language is the best, so if you strongly prefer another language, Cogent Core may not be for you. But if you've been slogging along in the Javascript + HTML + CSS world, or come from a Qt/C++ or Flutter background, you might find something to like here.
 
-### Javascript + HTML + CSS Frameworks
+### Javascript + HTML + CSS frameworks
 
 Most of the world's GUI software is written using some web framework.
 
