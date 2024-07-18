@@ -2,7 +2,7 @@
 author = ["Kai O'Reilly", "Randy O'Reilly"]
 +++
 
-Today we are announcing the initial public release of the Cogent Core GUI framework. Cogent Core prioritizes the ability to Code Once, Run Everywhere (Core). You are reading this blog in a Cogent Core app running on the web via wasm (web assembly). The same code can run on macOS, Windows, Linux, iOS, Android, and the web, through a command line tool that manages all the details for running and building apps for each platform.
+Today we are announcing the initial public release of the Cogent Core GUI framework. Cogent Core prioritizes the ability to code once, run everywhere (core). You are reading this blog in a Cogent Core app running on the web via [wasm](https://en.wikipedia.org/wiki/WebAssembly) (web assembly). The same code can run on macOS, Windows, Linux, iOS, Android, and the web, through a command line tool that manages all the details for running and building apps for each platform.
 
 Cogent Core is written in [Go](https://go.dev), and inherits many of the best features from this language and its associated ecosystem. Go code is simple, easy to read and write, and emphasizes a minimalist approach without the extra syntax and boilerplate that clutters other languages.
 
@@ -79,7 +79,7 @@ Overall, the key feature of Cogent Core is that it allows you to efficiently wri
 
 * Extensive styling properties allow everything to be customized, including a powerful automatic layout system that solves all the hard layout problems for you, and complete event-driven control over app behavior. Styling is easy to control and well documented, and anyone can quickly customize widgets to fit their needs.
 
-* Responsive widget elements that automatically adapt to different screen sizes and orientations, enabling one coherent codebase to run across different platforms, consistent with the "code once, run everywhere" (core) mantra.
+* Responsive widget elements that automatically adapt to different screen sizes and orientations, enabling one coherent codebase to run across different platforms.
 
 * The code to implement standard widgets is transparent and elegant, making it easy to write your own custom widget elements if needed.
 
