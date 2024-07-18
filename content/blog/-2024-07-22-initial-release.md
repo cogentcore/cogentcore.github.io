@@ -61,16 +61,14 @@ You can even make interactive plots of data:
 type Data struct {
 	Time       float32
 	Population float32
+	Distance   float32
 }
-data := []Data{
-    {0, 500},
-    {1, 800},
-    {2, 1600},
-    {3, 1400},
-}
-dt := errors.Log1(table.NewSliceTable(data))
-pe := plotcore.NewPlotEditor(b).SetTable(dt)
-pe.ColumnOptions("Population").On = true
+plotcore.NewPlotEditor(b).SetSlice([]Data{
+    {0, 500, 1520},
+    {1, 800, 860},
+    {2, 1600, 930},
+    {3, 1400, 1282},
+})
 ```
 
 ## Key features
