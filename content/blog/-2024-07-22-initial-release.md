@@ -4,7 +4,7 @@ author = ["Kai O'Reilly", "Randy O'Reilly"]
 
 Today we are announcing the initial public release of the Cogent Core GUI framework. Cogent Core prioritizes the ability to Code Once, Run Everywhere (Core). You are reading this blog in a Cogent Core app running on the web via wasm (web assembly). The same code can run on macOS, Windows, Linux, iOS, Android, and the web, through a command line tool that manages all the details for running and building apps for each platform.
 
-Cogent Core is written in Go (Golang), and inherits many of the best features from this language and its associated ecosystem. Go code is simple, easy to read and write, and emphasizes a minimalist approach without the extra syntax and boilerplate that clutters other languages.
+Cogent Core is written in [Go](https://go.dev), and inherits many of the best features from this language and its associated ecosystem. Go code is simple, easy to read and write, and emphasizes a minimalist approach without the extra syntax and boilerplate that clutters other languages.
 
 Here's a simple hello world app in Cogent Core:
 
@@ -109,7 +109,7 @@ Meanwhile, Randy's son Kai was busy experimenting with different frameworks and 
 
 So the father and son team (more son than father, to be clear) spent the next year rewriting this codebase many times over, peeling away layers of complexity and finding the most robust and elegant solutions to the many problems such a framework must solve. The [principles](https://cogentcore.org/core/architecture/principles) capture some of our hard-won lessons. We hope that the experience of using this framework demonstrates the resulting simplicity and power of the approach.
 
-Throughout this process, Randy maintained what is now **Cogent Code TODO: link** as his primary everyday code editor, and the neural network models based on this framework were used by students and colleagues. Therefore, the core of the framework is well-tested and ready to use, even as we continue to build out more features and welcome input from the broader community for how to make it even better.
+Throughout this process, Randy maintained what is now [Cogent Code](https://cogentcore.org/cogent/code) as his primary everyday code editor, and the neural network models based on this framework were used by students and colleagues. Therefore, the core of the framework is well-tested and ready to use, even as we continue to build out more features and welcome input from the broader community for how to make it even better.
 
 We each have a long-term commitment to the future of the Cogent Core framework. Randy and other scientists and instructors rely on it for research and teaching. Kai plans to build his career around the framework. He is programming apps in it and is available for consulting projects to develop Cogent Core solutions.
 
@@ -121,9 +121,9 @@ One important future direction, evident in the interactive editing ability shown
 
 **TODO** screenshots!
 
-Furthermore, we have written a shell language variant of Go, called `cosh` or [Cogent Shell](https://github.com/cogentcore/core/shell), which allows direct intermixing of shell-like execution of command-line tools, with standard Go control constructs, using the yaegi interpreter. Everything can be transpiled into standard Go and built the usual way as a fully compiled executable as well. Next, we plan to extend this general approach to the numerical computing and data science domain, in the [Cogent Numbers](https://github.com/cogentcore/cogent/numbers) framework, to provide a viable competitor in this Python-dominated domain.
+Furthermore, we have written a shell language variant of Go, called `cosh` or [Cogent Shell](https://github.com/cogentcore/core/shell), which allows direct intermixing of shell-like execution of command-line tools, with standard Go control constructs, using the yaegi interpreter. Everything can be transpiled into standard Go and built the usual way as a fully compiled executable as well. Next, we plan to extend this general approach to the numerical computing and data science domain, in the [Cogent Numbers](https://github.com/cogentcore/cogent/tree/main/numbers) framework, to provide a viable competitor in this Python-dominated domain.
 
-In addition, we will be completing the Cogent Mail client and the Cogent Canvas app for editing SVG-based vector graphics. We also plan to make a video editor, terminal emulator, and 3D modeling app as we continue working on a web browser.
+In addition, we will be completing the [Cogent Canvas](https://cogentcore.org/cogent/canvas) app for editing SVG vector graphics, the [Cogent Mail](https://github.com/cogentcore/cogent/tree/main/mail) client, a [terminal emulator](https://github.com/cogentcore/cogent/tree/main/terminal), and a [3D modeling app](https://github.com/cogentcore/cogent/tree/main/craft). We also plan to make a video editor and continue working on a [web browser](https://github.com/cogentcore/cogent/tree/main/web).
 
 ## Comparisons with other frameworks
 
@@ -145,7 +145,7 @@ Most of the world's GUI software is written using one of the many web frameworks
 
 Although [Flutter](https://flutter.dev) can be good for creating simple mobile apps, it has several limitations:
 
-* It is not suitable for building advanced desktop apps, such as those that [need multiple windows](https://github.com/flutter/flutter/issues/30701). In comparison, Cogent Core has complete desktop support, as evidenced by the powerful multi-window code editor and neural network models built with it.
+* It is not suitable for building advanced desktop apps, such as those that [need multiple windows](https://github.com/flutter/flutter/issues/30701). In comparison, Cogent Core has complete desktop support, as evidenced by the powerful multi-window [code editor](https://cogentcore.org/cogent/code) and [neural network models](https://emersim.org) built with it.
 
 * Flutter’s declarative paradigm creates excessive indentation and makes it hard to integrate logic into GUIs without falling back on ternaries and other such constructs. For example, here is an indentation closing block from the [Flutter sample app](https://github.com/flutter/samples/blob/main/material_3_demo/lib/home.dart):
 
