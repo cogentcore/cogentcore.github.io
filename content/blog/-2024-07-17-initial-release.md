@@ -1,4 +1,4 @@
-Today we are announcing the initial public release of the Cogent Core GUI framework. Cogent Core prioritizes the ability to Code Once, Run Everywhere (Core). You are reading this blog in a Cogent Core app running on the web via wasm (web assembly). The same code can run on macOS, Windows, Linux, iOS, Android, and the web, through a `core` command line tool that manages all the details for running and building apps for each platform.
+Today we are announcing the initial public release of the Cogent Core GUI framework. Cogent Core prioritizes the ability to Code Once, Run Everywhere (Core). You are reading this blog in a Cogent Core app running on the web via wasm (web assembly). The same code can run on macOS, Windows, Linux, iOS, Android, and the web, through a command line tool that manages all the details for running and building apps for each platform.
 
 Cogent Core is written in Go (Golang), and inherits many of the best features from this language and its associated ecosystem. Go code is simple, easy to read and write, and emphasizes a minimalist approach without the extra syntax and boilerplate that clutters other languages.
 
@@ -18,17 +18,17 @@ func main() {
 
 See that "Hello, World!" button? That is a live rendering of the code shown in the text editor above. You can change the message, press `Ctrl+Enter` or just click off, and you'll see it update!
 
-Cogent Core supports all the usual types of GUI widgets, along with some fairly advanced ones not found in other frameworks. Interactive, editable examples of all major widgets are available on the main [docs](https://www.cogentcore.org/core) page. (which is also a Cogent Core app running via wasm).
+Cogent Core supports all the usual types of GUI widgets, along with some fairly advanced ones not found in other frameworks. Interactive, editable examples of all major widgets are available on the main [docs](https://www.cogentcore.org/core) page (which is also a Cogent Core app running via wasm).
 
 Here's a small sample of widgets, and a few things you can do with them:
 
 ```Go
 core.NewButton(b).SetText("Hello, World!").SetIcon(icons.Send).OnClick(func(e events.Event) {
-    core.MessageSnackbar(b, "Message sent to the world!")
+    core.MessageSnackbar(b, "Hello!")
 })
 core.NewText(b).SetText("Name:").SetTooltip("Enter your name in the text field")
 core.NewTextField(b).SetPlaceholder("Jane Doe")
-value := float32(0.5)
+value := 0.5
 spinner := core.Bind(&value, core.NewSpinner(b))
 slider := core.Bind(&value, core.NewSlider(b))
 spinner.OnChange(func(e events.Event) {
@@ -70,23 +70,25 @@ pe.Options.XAxisColumn = "Time"
 pe.ColumnOptions("Population").On = true
 ```
 
-## Key Features
+## Key features
 
-* Extensive styling properties allow everything to be customized, including a powerful automatic layout system that solves all the hard layout problems for you. Anyone coming from the CSS world should be able to quickly adapt, and others {insert something to appeal to people not coming from the CSS world}
+* Extensive styling properties allow everything to be customized, including a powerful automatic layout system that solves all the hard layout problems for you. Styling is easy to control and well documented, and anyone can quickly customize widgets to fit their needs.
 
-* Vulkan for high performance 2D and 3D rendering
+* A dynamic color system based on Material Design 3 enables effortless switching between light and dark mode and gives developers and users the ability to easily change the colors of an app.
 
-* Full-featured SVG for 2D rendering and icons
+* Automatic views of any Go data structure allow for instant data binding and advanced app inspection, making complex widgets like editable tables and trees take just one line of code.
 
-* Powerful HCT color space integrated throughout: allows instant light / dark and alternate color scheme customization.
+* [SVG](https://cogentcore.org/core/widgets/media/svg), [HTML](https://cogentcore.org/core/widgets/other/html), [Markdown](https://cogentcore.org/core/widgets/other/html), [Canvas](https://cogentcore.org/core/widgets/media/canvases), [Video](https://www.cogentcore.org/core/widgets/media/videos), and [3D](https://www.cogentcore.org/core/widgets/other/xyz) support make it possible to create engaging multimedia experiences from 3D models to games.
 
-* Efficient mechanism for dynamically updating content that captures the best of imperative and declarative mode programming.
+* [Plans](https://cogentcore.org/core/basics/plans) provide an efficient mechanism for dynamically updating content in a way that captures the best of imperative and declarative GUI paradigms.
 
-* Focus on efficient keyboard navigation and customizable mappings, with full support for emacs mode.
+* A focus on keyboard navigation and user customization enables streamlined access to important functionality with any keybindings, with a dynamic search bar giving convenient access to all app actions on every platform.
 
-*add more...*
+* Vulkan, a modern, cross-platform, high-performance graphics framework, allows apps to run on all platforms at extremely fast speeds. All Cogent Core apps compile to machine code, allowing them to run without any overhead.
 
-## Our Story
+* Cogent Core is completely free and open source under the permissive BSD-3 License, allowing you to use it for any purpose, commercially or personally. We believe that software works best when everyone can use it.
+
+## Our story
 
 We are committed to supporting Cogent Core and growing a full software ecosystem around it, building on where Cogent Core came from and where we want it to go.
 
@@ -106,38 +108,64 @@ We think Go is such a special language that it deserves to be used for everythin
 
 ## Future directions
 
-One important future direction, evident in the interactive editing ability shown above, is to use the [yaegi](https://github.com/traefik/yaegi) Go interpreter as a replacement for the traditional role that Python has played relative to backend languages such as C++, so that you can transparently have a dynamic, interpreted experience as well as the lightning-fast compilation of Go. We think this can provide an ideal combination of rapid prototyping and hot-reloading (as in the Flutter framework), within a strongly typed and robust language that scales to large-scale applications (unlike Python and Javascript).
+One important future direction, evident in the interactive editing ability shown above, is to use the [yaegi](https://github.com/traefik/yaegi) Go interpreter as a replacement for the traditional role that Python has played relative to backend languages such as C++, so that you can transparently have a dynamic, interpreted experience as well as the lightning-fast compilation of Go. We think this can provide an ideal combination of rapid prototyping and hot-reloading (as in the Flutter framework), within a strongly typed and robust language that scales to large-scale applications (unlike Python and JavaScript).
 
 Furthermore, we have written a shell language variant of Go, called `cosh` (Cogent Shell), which allows direct intermixing of shell-like execution of command-line tools, with standard Go control constructs, using the yaegi interpreter. Everything can be transpiled into standard Go and built the usual way as a fully compiled executable as well. Next, we plan to extend this general approach to the numerical computing and data science domain, in the Cogent Numbers framework, to provide a viable competitor in this Python-dominated domain.
 
-In addition, we will be completing the Cogent Canvas app, which provides editing of SVG-based vector graphics, and the Cogent Mail client. We also plan to make a video editing app and are working on a web browser.
+In addition, we will be completing the Cogent Mail client and the Cogent Canvas app for editing SVG-based vector graphics. We also plan to make a video editor, terminal emulator, and 3D modeling app as we continue working on a web browser.
 
 ## Comparisons with other frameworks
 
-In the remainder of this blog, we provide some commentary about how we think Cogent Core compares with various other widely-used GUI frameworks and languages. As you can tell if you've read this far, we think the Go language is the best, so if you strongly prefer another language, Cogent Core may not be for you. But if you've been slogging along in the Javascript + HTML + CSS world, or come from a Qt/C++ or Flutter background, you might find something to like here.
+In the remainder of this blog, we provide some commentary about how we think Cogent Core compares with other widely used GUI frameworks. {*Does this really make sense?* As you can tell if you've read this far, we think Go is the best language, so if you strongly prefer another language, Cogent Core may not be for you. But if you've been slogging along in the Javascript+HTML+CSS world, or come from a Qt/C++ or Flutter background, you might find something to like here.}
 
-### Javascript + HTML + CSS frameworks
+### Web frameworks
 
-Most of the world's GUI software is written using some web framework.
+Most of the world's GUI software is written using some web framework, which provide various benefits but come with difficult disadvantages:
 
-* Everything is built on some version of JS, HTML, and (S)CSS, all of which are poorly designed and extremely difficult to use effectively in conjunction with each other for any significant use case.
+* The awkward separation of JS, HTML, and CSS makes it hard to create dynamic interfaces without some combination of them, resulting in inconsistent languages like [JSX](https://en.wikipedia.org/wiki/JSX_(JavaScript)) and [SCSS](https://en.wikipedia.org/wiki/Sass_(style_sheet_language)). In comparison, Cogent Core allows you to write everything in one coherent language.
 
-* basic widgets significantly lacking: takes huge amount of time and effort to code a basic slider or spinner. so much CSS garbage.. Kai, take it away here..
+* HTML and CSS don’t provide modern-looking widgets out of the box, forcing you to either [painfully wrestle with CSS](https://blog.logrocket.com/creating-custom-css-range-slider-javascript-upgrades/) or depend on one of many inconsistent CSS frameworks. In contrast, Cogent Core comes with modern and easily customizable widgets without a single line of CSS.
 
-* send to link comparing tic-tac-toe implementations?
+* Web frameworks are plagued by browser inconsistencies, making things as simple as favicons the subject of [blog posts](https://dev.to/masakudamatsu/favicon-nightmare-how-to-maintain-sanity-3al7) featuring language like “nightmare” and “how to maintain sanity.” Cogent Core apps, by contrast, automatically work consistently across all devices.
 
-### Platform-specific frameworks
-
-Most mobile apps are written using tools optimized for each of the two major mobile platforms (iOS and Android), requiring significant duplication of effort, and mastery of vastly different software ecosystems (Swift/Objective-C vs. Java). By contrast, Cogent Core allows you to truly write one app in one language, and have it work well on both platforms (Core = "Code Once, Run Everywhere").
+* The benefits of Cogent Core relative to the web are highlighted by our [tic-tac-toe tutorial](https://www.cogentcore.org/core/tutorials/tic-tac-toe), which has fewer than half the lines of code of the similar [React one](https://react.dev/learn/tutorial-tic-tac-toe), while also containing no ternaries and no JSX.
 
 ### Flutter
 
-* lots of complex boilerplate, relatively obscure language (Dart), apparently losing some support from Google.
+Although [Flutter](https://flutter.dev) can be good for creating simple mobile apps, it has several limitations:
 
-* send to link comparing ours vs. theirs?
+* It is not suitable for building advanced desktop apps, such as those that [need multiple windows](https://github.com/flutter/flutter/issues/30701). In comparison, Cogent Core has complete desktop support, as evidenced by the powerful multi-window code editor and neural network models built with it.
 
-### Go GUIs: Fyne and Gio
+* Flutter’s declarative paradigm creates excessive indentation and makes it hard to integrate logic into GUIs without falling back on ternaries and other such constructs. For example, here is an indentation closing block from the [Flutter sample app](https://github.com/flutter/samples/blob/main/material_3_demo/lib/home.dart):
 
-* Fyne is "fine" overall, but it lacks the support for customization and complexity that is necessary to build powerful real-world apps.
+```dart
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
 
-* Gio has a very powerful set of platform-specific backend code, but the low-level nature of the immediate-mode design makes it very difficult to develop complex, large-scale applications, since there are too many steps to accomplish things.
+By contrast, Cogent Core uses [plans](https://cogentcore.org/core/basics/plans) to allow for elegant integration of imperative and declarative logic.
+
+* Flutter contains a lot of repetitive boilerplate, such as `Widget build(BuildContext context)`, and is peppered with distracting keywords like `final`, `required`, and `@override`. In contrast, Cogent Core works to avoid boilerplate and contains few keywords due to Go’s emphasis on simplicity.
+
+### Platform-specific frameworks
+
+Many apps are written using languages specific to certain platforms, such as Swift and Java. However, doing this requires significant duplication of effort as you have to write and maintain your app multiple times if you want it to be cross-platform. By contrast, Cogent Core allows you to write an app in one language and have it work well on all platforms.
+
+### Other Go frameworks
+
+* [Fyne](https://fyne.io) is "fine" overall, but it does not provide the customization and advanced widgets necessary for building powerful apps. In contrast, Cogent Core enables complete customization and provides a vast array of useful widgets.
+
+* [Gio](https://gioui.org) has a lot of powerful features, but the low-level nature of the immediate mode design makes it very difficult to develop apps since even simple things like making a button with text and an icon can take [30 lines of code](https://git.sr.ht/~eliasnaur/gio-example/tree/main/kitchen/kitchen.go#L225). In Cogent Core, it only takes one line of code to make a button with text and an icon.
+
+* [Wails](https://wails.io), [go-app](https://go-app.dev), and other such packages suffer many of the same issues as standard web frameworks, as you are still effectively writing JS, HTML, and CSS. Cogent Core allows you to completely bypass web languages and write everything in Go.
