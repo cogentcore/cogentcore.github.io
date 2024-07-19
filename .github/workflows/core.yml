@@ -43,7 +43,10 @@ jobs:
         run: go install cogentcore.org/core/cmd/core@main
 
       - name: Build App
-        run: core build web && cp -a bin/web/* .
+        run: core build web -o static
+
+      - name: Copy CNAME
+        run: cp CNAME static
 
       - name: Setup Pages
         id: pages
@@ -52,7 +55,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-            path: "."
+            path: "static"
 
   # Deployment job
   deploy:
