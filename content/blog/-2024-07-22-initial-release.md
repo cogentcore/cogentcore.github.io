@@ -2,9 +2,9 @@
 author = ["Kai O'Reilly", "Randy O'Reilly"]
 +++
 
-Today we are announcing the initial public release of the Cogent Core GUI framework. Cogent Core prioritizes the ability to code once, run everywhere (core). You are reading this blog in a Cogent Core app running on the web via [wasm](https://en.wikipedia.org/wiki/WebAssembly) (web assembly). The same code can run on macOS, Windows, Linux, iOS, Android, and the web, through a command line tool that manages all the details for running and building apps for each platform.
+Today we are announcing the initial public release of the Cogent Core GUI framework. Cogent Core allows you to build powerful, fast, and elegant apps that run on all platforms with a single Go codebase, allowing you to Code Once, Run Everywhere. This blog is an interactive Cogent Core app running on the web using [wasm](https://en.wikipedia.org/wiki/WebAssembly). The same code can run on macOS, Windows, Linux, iOS, Android, and the web through a command line tool that manages all the details for running and building apps for each platform.
 
-Cogent Core is written in [Go](https://go.dev), and inherits many of the best features from this language and its associated ecosystem. Go code is simple, easy to read and write, and emphasizes a minimalist approach without the extra syntax and boilerplate that clutters other languages.
+Cogent Core is written in [Go](https://go.dev), and inherits many of its features from this language and its associated ecosystem. Go code is simple, easy to read and write, and emphasizes a minimalist approach without the extra syntax and boilerplate that clutters other languages.
 
 Here's a simple hello world app in Cogent Core:
 
@@ -73,7 +73,7 @@ plotcore.NewPlotEditor(b).SetSlice([]Data{
 
 ## Key features
 
-Overall, the key feature of Cogent Core is that it allows you to efficiently write full-scale GUI apps in the Go language, with no limits relative to what can be accomplished in other frameworks.  More specifically it has:
+Overall, the key feature of Cogent Core is that it allows you to efficiently write full-scale GUI apps in the Go language, with no limits relative to what can be accomplished in other frameworks. More specifically, it has:
 
 * A full set of GUI widgets, with built-in support for most elements of the [Material 3](https://m3.material.io/) standard, with tooltips, drag-and-drop, sprites, popup completion, a full text editor with code highlighting, and other advanced features, allowing powerful apps to be assembled by customizing these existing elements.
 
