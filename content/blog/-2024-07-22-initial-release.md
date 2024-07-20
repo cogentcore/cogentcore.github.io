@@ -180,3 +180,5 @@ Many apps are written using languages specific to certain platforms, such as Swi
 * [Gio](https://gioui.org) has a lot of powerful features, but the low-level nature of the immediate mode design makes it very difficult to develop apps since even simple things like making a button with text and an icon can take [30 lines of code](https://git.sr.ht/~eliasnaur/gio-example/tree/main/kitchen/kitchen.go#L225). In Cogent Core, it only takes one line of code to make a button with text and an icon.
 
 * [Wails](https://wails.io), [go-app](https://go-app.dev), and other such packages suffer many of the same issues as standard web frameworks, as you are still effectively writing JS, HTML, and CSS. Cogent Core allows you to completely bypass web languages and write everything in Go.
+
+## Conclusion
