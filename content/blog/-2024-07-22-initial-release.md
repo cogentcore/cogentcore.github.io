@@ -182,3 +182,6 @@ Many apps are written using languages specific to certain platforms, such as Swi
 * [Wails](https://wails.io), [go-app](https://go-app.dev), and other such packages suffer many of the same issues as standard web frameworks, as you are still effectively writing JS, HTML, and CSS. Cogent Core allows you to completely bypass web languages and write everything in Go.
 
 ## Conclusion
+
+In summary, Cogent Core brings the power and elegance of the Go programming language to the GUI domain, opening up a whole new world of powerful and exciting applications just waiting to be written!  As you can see from our interactive [documentation](https://www.cogentcore.org/core) and [videos](todo:video.link!), once you master a core set of basic concepts, there is no limit to what you can create, with remarkable ease and elegance.
+
