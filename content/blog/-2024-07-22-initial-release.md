@@ -2,6 +2,8 @@
 author = ["Kai O'Reilly", "Randy O'Reilly"]
 +++
 
+*For a video introduction to Cogent Core, see {TODO}*
+
 Today we are announcing the initial public release of the Cogent Core GUI framework. Cogent Core allows you to build powerful, fast, elegant apps that run on all platforms with a single Go codebase, allowing you to Code Once, Run Everywhere. This blog is an interactive Cogent Core app running on the web using [wasm](https://en.wikipedia.org/wiki/WebAssembly). The same code can run on macOS, Windows, Linux, iOS, Android, and the web through a command line tool that manages all the details for running and building apps for each platform.
 
 Cogent Core is written in [Go](https://go.dev), and inherits many of its features from this language and its associated ecosystem. Go code is simple, easy to read and write, and emphasizes a minimalist approach without the extra syntax and boilerplate that clutters other languages.
@@ -183,5 +185,4 @@ Many apps are written using languages specific to certain platforms, such as Swi
 
 ## Conclusion
 
-In summary, Cogent Core brings the power and elegance of the Go programming language to the GUI domain, opening up a whole new world of powerful and exciting applications just waiting to be written!  As you can see from our interactive [documentation](https://www.cogentcore.org/core) and [videos](todo:video.link!), once you master a core set of basic concepts, there is no limit to what you can create, with remarkable ease and elegance.
-
+In summary, Cogent Core brings the power and elegance of the Go programming language to the GUI domain, opening up a whole new world of powerful and exciting applications. As you can see from our interactive [documentation](https://www.cogentcore.org/core) and [videos](https://youtube.com/@CogentCore), once you master a core set of basic concepts, there is no limit to what you can create, with remarkable ease and elegance.
