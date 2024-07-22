@@ -6,6 +6,7 @@ package main
 
 import (
 	"embed"
+	"image/color"
 
 	"cogentcore.org/core/base/errors"
 	"cogentcore.org/core/core"
@@ -77,6 +78,20 @@ func main() {
 		core.NewText(frame).SetType(core.TextHeadlineMedium).SetText(core.AppAbout)
 		core.NewButton(frame).SetText("Learn about the Cogent Core framework").OnClick(func(e events.Event) {
 			core.TheApp.OpenURL("https://cogentcore.org/core")
+		})
+		return true
+	}
+	htmlcore.ElementHandlers["color-scheme-control"] = func(ctx *htmlcore.Context) bool {
+		type theme struct {
+			Theme core.Themes `default:"Auto"`
+			Color color.RGBA  `default:"#4285f4"`
+		}
+		th := &theme{core.AppearanceSettings.Theme, core.AppearanceSettings.Color}
+		fm := core.NewForm(ctx.BlockParent).SetStruct(th)
+		fm.OnChange(func(e events.Event) {
+			core.AppearanceSettings.Theme = th.Theme
+			core.AppearanceSettings.Color = th.Color
+			core.UpdateSettings(ctx.BlockParent, core.AppearanceSettings)
 		})
 		return true
 	}

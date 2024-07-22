@@ -86,6 +86,8 @@ The key feature of Cogent Core is that it allows you to efficiently write full-s
 
 * A dynamic color system based on Material Design 3 enables effortless switching between light and dark mode and gives developers and users the ability to easily customize the colors of an app while maintaining key contrast and legibility standards.
 
+<color-scheme-control></color-scheme-control>
+
 * Automatic views of any Go data structure, including slices, structs, and maps, allow for instant data binding and advanced app inspection, making complex widgets like editable tables, trees, and forms take just one line of code.
 
 * [SVG](https://cogentcore.org/core/widgets/media/svg), [HTML](https://cogentcore.org/core/widgets/other/html), [Markdown](https://cogentcore.org/core/widgets/other/html), [Canvas](https://cogentcore.org/core/widgets/media/canvases), [Video](https://www.cogentcore.org/core/widgets/media/videos), and [3D](https://www.cogentcore.org/core/widgets/other/xyz) support make it possible to create engaging multimedia experiences from 3D models to games, and documentation and blogs like you're reading now.
