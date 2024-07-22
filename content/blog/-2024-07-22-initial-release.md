@@ -134,11 +134,13 @@ We think Go is such a special language that it deserves to be used for everythin
 
 One important future direction, highlighted by the interactive editing ability shown above, is to use the [yaegi](https://github.com/traefik/yaegi) Go interpreter as a replacement for languages like Python so that you can transparently have a dynamic, interpreted experience as well as the lightning-fast compilation of Go. We think this can provide an ideal combination of rapid prototyping and hot-reloading (as in the Flutter framework), within a strongly typed and robust language that scales to large-scale applications (unlike Python and JavaScript).
 
-**TODO** screenshots!
-
 In addition, we will continue working on a shell language variant of Go, called `cosh` or [Cogent Shell](https://github.com/cogentcore/core/shell), which allows direct intermixing of shell-like execution of command-line tools with standard Go code using yaegi. Everything can be transpiled into standard Go and built the usual way as a fully compiled executable as well. Next, we plan to extend this general approach to the numerical computing and data science domain, in the [Cogent Numbers](https://github.com/cogentcore/cogent/tree/main/numbers) framework, to provide a viable competitor in this Python-dominated space.
 
 We will also be completing the [Cogent Canvas](https://cogentcore.org/cogent/canvas) app for editing SVG vector graphics, the [Cogent Mail](https://github.com/cogentcore/cogent/tree/main/mail) client, a [terminal emulator](https://github.com/cogentcore/cogent/tree/main/terminal), and a [3D modeling app](https://github.com/cogentcore/cogent/tree/main/craft). We also plan to make a video editor and continue working on a [web browser](https://github.com/cogentcore/cogent/tree/main/web).
+
+![Screenshot of Cogent Canvas](../media/initial-release/cogent-canvas.jpg)
+
+*Screenshot of Cogent Canvas*
 
 ## Comparisons with other frameworks
 
