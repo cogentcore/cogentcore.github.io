@@ -92,7 +92,7 @@ The key feature of Cogent Core is that it allows you to efficiently write full-s
 
 * [SVG](https://cogentcore.org/core/widgets/media/svg), [HTML](https://cogentcore.org/core/widgets/other/html), [Markdown](https://cogentcore.org/core/widgets/other/html), [Canvas](https://cogentcore.org/core/widgets/media/canvases), [Video](https://www.cogentcore.org/core/widgets/media/videos), and [3D](https://www.cogentcore.org/core/widgets/other/xyz) support make it possible to create engaging multimedia experiences from 3D models to games, and documentation and blogs like you're reading now.
 
-![Screenshot of Cogent Core 3D Demo](../media/xyz-demo.jpg)
+![Screenshot of Cogent Core 3D Demo](../media/initial-release/xyz-demo.jpg)
 
 * [Plans](https://cogentcore.org/core/basics/plans) provide an efficient mechanism for dynamically updating content in a way that captures the best of imperative and declarative GUI paradigms.
 
@@ -110,13 +110,15 @@ The initial version of this software was named [GoKi](https://github.com/goki/gi
 
 The only thing missing from the Go ecosystem at the time was a full-featured native GUI framework, so Randy built on his experience with [Qt](https://en.wikipedia.org/wiki/Qt_(software)) to write one in Go. GoKi provided a powerful 2D and 3D interface that enabled experts, as well as undergraduate and graduate students in classes taught by professors around the world, to better understand and develop new ideas about how the brain works. However, as a first effort in Go, GoKi retained too much of the C++ style.
 
-![Screenshot of a neural network model built with Cogent Core](../media/emer-choose.jpg)
+![Screenshot of a neural network model built with Cogent Core](../media/initial-release/emer-choose.jpg)
 
 Meanwhile, Randy's son Kai was busy experimenting with different frameworks and languages for various coding projects. He eventually came to the same conclusion that Go is truly the best language around. After exploring existing GUI frameworks in Go, Kai decided that a major overhaul of GoKi might produce a better framework than any of the other options.
 
 So the father and son team (more son than father, to be clear) spent the next year rewriting this codebase many times over, peeling away layers of complexity and finding the most robust and elegant solutions to the many problems such a framework must solve. The [principles](https://cogentcore.org/core/architecture/principles) capture some of our hard-won lessons. We hope that the experience of using this framework demonstrates the resulting simplicity and power of the approach.
 
 Throughout this process, Randy maintained what is now [Cogent Code](https://cogentcore.org/cogent/code) as his primary everyday code editor, and students and colleagues explored and extended the neural network models based on this framework. Therefore, the core of the framework is well-tested and ready to use, even as we continue to build out more features and welcome input from the broader community for how to make it even better.
+
+![Screenshot of Cogent Code](../media/initial-release/cogent-code.jpg)
 
 We each have a long-term commitment to the future of the Cogent Core framework. Randy and other scientists and instructors rely on it for research and teaching. Kai plans to build his career around the framework. He is programming apps in it and is available for consulting projects to develop Cogent Core solutions.
 
