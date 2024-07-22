@@ -90,7 +90,7 @@ The key feature of Cogent Core is that it allows you to efficiently write full-s
 
 * [SVG](https://cogentcore.org/core/widgets/media/svg), [HTML](https://cogentcore.org/core/widgets/other/html), [Markdown](https://cogentcore.org/core/widgets/other/html), [Canvas](https://cogentcore.org/core/widgets/media/canvases), [Video](https://www.cogentcore.org/core/widgets/media/videos), and [3D](https://www.cogentcore.org/core/widgets/other/xyz) support make it possible to create engaging multimedia experiences from 3D models to games, and documentation and blogs like you're reading now.
 
-![Screenshot of Cogent Core 3D Demo](../images/xyz-demo.jpg)
+![Screenshot of Cogent Core 3D Demo](../media/xyz-demo.jpg)
 
 * [Plans](https://cogentcore.org/core/basics/plans) provide an efficient mechanism for dynamically updating content in a way that captures the best of imperative and declarative GUI paradigms.
 
