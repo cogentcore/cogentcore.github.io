@@ -96,9 +96,9 @@ The key feature of Cogent Core is that it allows you to efficiently write full-s
 
 * A focus on keyboard navigation and user customization enables streamlined access to important functionality with any keybindings, with a dynamic search bar giving convenient access to all app actions on every platform.
 
-* Vulkan, a modern, cross-platform, high-performance graphics framework, allows apps to run on all platforms at extremely fast speeds. All Cogent Core apps compile to machine code, allowing them to run without any overhead.
+* [Vulkan](https://en.wikipedia.org/wiki/Vulkan), a modern, cross-platform, high-performance graphics framework, allows apps to run on all platforms at extremely fast speeds. All Cogent Core apps compile to machine code, allowing them to run without any overhead.
 
-* Cogent Core is completely free and open source under the permissive BSD-3 License, allowing you to use it for any purpose, commercially or personally. We believe that software works best when everyone can use it.
+* Cogent Core is completely free and open source under the permissive [BSD-3 License](https://github.com/cogentcore/core/blob/main/LICENSE), allowing you to use it for any purpose, commercially or personally. We believe that software works best when everyone can use it.
 
 ## Our story
 
