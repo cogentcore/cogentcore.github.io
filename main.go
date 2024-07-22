@@ -68,12 +68,9 @@ func main() {
 		img := core.NewImage(frame)
 		errors.Log(img.OpenFS(resources, "name.png"))
 		img.Styler(func(s *styles.Style) {
-			x := func(uc *units.Context) float32 {
+			s.Min.X.SetCustom(func(uc *units.Context) float32 {
 				return min(uc.Dp(612), uc.Vw(80))
-			}
-			s.Min.Set(units.Custom(x), units.Custom(func(uc *units.Context) float32 {
-				return x(uc) * (128.0 / 612.0)
-			}))
+			})
 		})
 		core.NewText(frame).SetType(core.TextHeadlineMedium).SetText(core.AppAbout)
 		core.NewButton(frame).SetText("Learn about the Cogent Core framework").OnClick(func(e events.Event) {
