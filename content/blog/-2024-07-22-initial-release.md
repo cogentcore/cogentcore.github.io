@@ -2,7 +2,7 @@
 author = ["Kai O'Reilly", "Randy O'Reilly"]
 +++
 
-*For a video introduction to Cogent Core, see {TODO}*
+*For a video introduction to Cogent Core, see https://youtu.be/nZzdy3Kyypk*
 
 Today we are announcing the initial public release of the Cogent Core GUI framework. Cogent Core allows you to build powerful, fast, elegant apps that run on all platforms with a single Go codebase, allowing you to Code Once, Run Everywhere (Core). This blog is an interactive Cogent Core app running on the web using [wasm](https://en.wikipedia.org/wiki/WebAssembly). The same code can run on macOS, Windows, Linux, iOS, Android, and the web through a command line tool that manages all the details for running and building apps for each platform.
 
