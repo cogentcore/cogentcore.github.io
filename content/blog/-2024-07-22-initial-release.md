@@ -142,6 +142,8 @@ We will also be completing the [Cogent Canvas](https://cogentcore.org/cogent/can
 
 *Screenshot of Cogent Canvas*
 
+We will also prioritize implementing internationalization and accessibility for the next major release of Cogent Core.
+
 ## Comparisons with other frameworks
 
 In the remainder of this blog, we provide some commentary about how we think Cogent Core compares with other widely used GUI frameworks. 
