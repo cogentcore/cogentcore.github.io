@@ -74,7 +74,7 @@ plotcore.NewPlotEditor(b).SetSlice([]Data{
 
 ## Key features
 
-The key feature of Cogent Core is that it allows you to efficiently write full-scale GUI apps in Go, with no limits relative to what can be accomplished in other frameworks. More specifically:
+The key feature of Cogent Core is that it allows you to efficiently write full-scale GUI apps in Go, with greater power and elegance than other frameworks. Specifically:
 
 * A full set of GUI widgets, with built-in support for most elements of the [Material 3](https://m3.material.io) standard, with tooltips, drag-and-drop, sprites, popup completion, a full text editor with code highlighting, and other advanced features, allow powerful apps to be assembled by customizing these existing elements.
 
@@ -202,4 +202,4 @@ Many apps are written using languages specific to certain platforms, such as Swi
 
 ## Conclusion
 
-In summary, Cogent Core brings the power and elegance of the Go programming language to the GUI domain, opening up a whole new world of powerful and exciting applications. As you can see from our interactive [documentation](https://www.cogentcore.org/core) and [videos](https://youtube.com/@CogentCore), once you master a core set of basic concepts, there is no limit to what you can create, with remarkable ease and elegance.
+Cogent Core brings the power and elegance of the Go programming language to the GUI domain, opening up a whole new world of powerful and exciting applications. As you can see from our interactive [documentation](https://www.cogentcore.org/core) and [videos](https://youtube.com/@CogentCore), once you master a core set of basic concepts, there is no limit to what you can create, with remarkable ease and elegance.
