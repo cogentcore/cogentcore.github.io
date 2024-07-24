@@ -99,5 +99,8 @@ func main() {
 		return true
 	}
 
+	b.OnShow(func(e events.Event) {
+		b.Update() // TODO: needed for image sizing on initial load
+	})
 	b.RunMainWindow()
 }
