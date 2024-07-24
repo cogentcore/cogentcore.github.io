@@ -80,7 +80,7 @@ plotcore.NewPlotEditor(b).SetSlice([]Data{
 
 The key feature of Cogent Core is that it allows you to efficiently write full-scale GUI apps in Go, with greater power and elegance than other frameworks. Specifically:
 
-* A full set of GUI widgets, with built-in support for most elements of the [Material 3](https://m3.material.io) standard, with tooltips, drag-and-drop, sprites, popup completion, a full text editor with code highlighting, and other advanced features, allow powerful apps to be assembled by customizing these existing elements.
+* It provides a full set of GUI widgets, with built-in support for most elements of the [Material 3](https://m3.material.io) standard, with tooltips, drag-and-drop, sprites, popup completion, a full text editor with code highlighting, and other advanced features, allowing powerful apps to be assembled by customizing these existing elements.
 
 * Extensive styling properties allow everything to be customized, including a powerful automatic layout system that solves all the hard layout problems for you, and complete event-driven control over app behavior. Styling is easy to control and well documented, and anyone can quickly customize widgets to fit their needs.
 
