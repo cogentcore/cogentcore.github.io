@@ -100,7 +100,7 @@ func main() {
 	}
 
 	b.OnShow(func(e events.Event) {
-		b.Update() // TODO: needed for image sizing on initial load
+		b.Update() // TODO: needed for image sizing on initial load (core/#1037)
 	})
 	b.RunMainWindow()
 }
