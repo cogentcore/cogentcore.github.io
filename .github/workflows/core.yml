@@ -40,7 +40,7 @@ jobs:
           go-version: '1.22'
 
       - name: Install Core
-        run: go install cogentcore.org/core/cmd/core@8b1b10f1872375e3f148d5e8fe7f6a61edb5c7a8
+        run: go install cogentcore.org/core/cmd/core@main
 
       - name: Build App
         run: core build web -o static
