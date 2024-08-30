@@ -50,15 +50,15 @@ func main() {
 			})
 		})
 		tree.Add(p, func(w *core.Button) {
-			w.SetText("Sponsor").SetIcon(icons.Favorite)
+			w.SetText("Community").SetIcon(icons.Forum)
 			w.OnClick(func(e events.Event) {
-				pg.Context.OpenURL("https://github.com/sponsors/cogentcore")
+				pg.Context.OpenURL("/community")
 			})
 		})
 		tree.Add(p, func(w *core.Button) {
-			w.SetText("Support").SetIcon(icons.Help)
+			w.SetText("Sponsor").SetIcon(icons.Favorite)
 			w.OnClick(func(e events.Event) {
-				pg.Context.OpenURL("/support")
+				pg.Context.OpenURL("https://github.com/sponsors/cogentcore")
 			})
 		})
 	})
