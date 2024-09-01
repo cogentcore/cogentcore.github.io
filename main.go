@@ -29,36 +29,39 @@ var content embed.FS
 func main() {
 	b := core.NewBody("Cogent Core")
 	pg := pages.NewPage(b).SetContent(content)
-	b.AddAppBar(pg.MakeToolbar)
-	b.AddAppBar(func(p *tree.Plan) {
-		tree.Add(p, func(w *core.Button) {
-			w.SetText("Blog").SetIcon(icons.RssFeed)
-			w.OnClick(func(e events.Event) {
-				pg.Context.OpenURL("/blog")
+	b.AddTopBar(func(bar *core.Frame) {
+		tb := core.NewToolbar(bar)
+		tb.Maker(pg.MakeToolbar)
+		tb.Maker(func(p *tree.Plan) {
+			tree.Add(p, func(w *core.Button) {
+				w.SetText("Blog").SetIcon(icons.RssFeed)
+				w.OnClick(func(e events.Event) {
+					pg.Context.OpenURL("/blog")
+				})
 			})
-		})
-		tree.Add(p, func(w *core.Button) {
-			w.SetText("Videos").SetIcon(icons.VideoLibrary)
-			w.OnClick(func(e events.Event) {
-				pg.Context.OpenURL("https://youtube.com/@CogentCore")
+			tree.Add(p, func(w *core.Button) {
+				w.SetText("Videos").SetIcon(icons.VideoLibrary)
+				w.OnClick(func(e events.Event) {
+					pg.Context.OpenURL("https://youtube.com/@CogentCore")
+				})
 			})
-		})
-		tree.Add(p, func(w *core.Button) {
-			w.SetText("GitHub").SetIcon(icons.GitHub)
-			w.OnClick(func(e events.Event) {
-				pg.Context.OpenURL("https://github.com/cogentcore")
+			tree.Add(p, func(w *core.Button) {
+				w.SetText("GitHub").SetIcon(icons.GitHub)
+				w.OnClick(func(e events.Event) {
+					pg.Context.OpenURL("https://github.com/cogentcore")
+				})
 			})
-		})
-		tree.Add(p, func(w *core.Button) {
-			w.SetText("Community").SetIcon(icons.Forum)
-			w.OnClick(func(e events.Event) {
-				pg.Context.OpenURL("/community")
+			tree.Add(p, func(w *core.Button) {
+				w.SetText("Community").SetIcon(icons.Forum)
+				w.OnClick(func(e events.Event) {
+					pg.Context.OpenURL("/community")
+				})
 			})
-		})
-		tree.Add(p, func(w *core.Button) {
-			w.SetText("Sponsor").SetIcon(icons.Favorite)
-			w.OnClick(func(e events.Event) {
-				pg.Context.OpenURL("https://github.com/sponsors/cogentcore")
+			tree.Add(p, func(w *core.Button) {
+				w.SetText("Sponsor").SetIcon(icons.Favorite)
+				w.OnClick(func(e events.Event) {
+					pg.Context.OpenURL("https://github.com/sponsors/cogentcore")
+				})
 			})
 		})
 	})
