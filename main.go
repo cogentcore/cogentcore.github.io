@@ -6,12 +6,10 @@ package main
 
 import (
 	"embed"
-	"image/color"
 
 	"cogentcore.org/core/base/errors"
 	"cogentcore.org/core/content"
 	"cogentcore.org/core/core"
-	"cogentcore.org/core/events"
 	"cogentcore.org/core/htmlcore"
 	"cogentcore.org/core/icons"
 	"cogentcore.org/core/styles"
@@ -81,20 +79,6 @@ func main() {
 		ctx.LinkButton(cl, "https://cogentcore.org/lab")
 		ca := core.NewButton(buttons).SetText("Apps").SetType(core.ButtonTonal)
 		ctx.LinkButton(ca, "https://cogentcore.org/cogent")
-		return true
-	}
-	ctx.ElementHandlers["color-scheme-control"] = func(ctx *htmlcore.Context) bool {
-		type theme struct {
-			Theme core.Themes `default:"Auto"`
-			Color color.RGBA  `default:"#4285f4"`
-		}
-		th := &theme{core.AppearanceSettings.Theme, core.AppearanceSettings.Color}
-		fm := core.NewForm(ctx.BlockParent).SetStruct(th)
-		fm.OnChange(func(e events.Event) {
-			core.AppearanceSettings.Theme = th.Theme
-			core.AppearanceSettings.Color = th.Color
-			core.UpdateSettings(ctx.BlockParent, core.AppearanceSettings)
-		})
 		return true
 	}
 
