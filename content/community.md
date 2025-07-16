@@ -1,3 +1,7 @@
++++
+Categories = ["Resources"]
++++
+
 For questions and support, you can use the [#cogentcore](https://gophers.slack.com/archives/C07ENRTB2F7) channel on the [Gophers Slack](https://invite.slack.golangbridge.org).
 
 For bug reports, feature requests, and questions, you can create issues and discussions in our GitHub [repositories](https://github.com/cogentcore).
