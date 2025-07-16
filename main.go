@@ -75,12 +75,12 @@ func main() {
 		core.NewText(frame).SetType(core.TextHeadlineMedium).SetText(core.AppAbout)
 
 		buttons := core.NewFrame(frame)
-		cc := core.NewButton(buttons).SetText("Cogent Core")
+		cc := core.NewButton(buttons).SetText("Core")
 		ctx.LinkButton(cc, "https://cogentcore.org/core")
-		cl := core.NewButton(buttons).SetText("Cogent Lab").SetType(core.ButtonTonal)
+		cl := core.NewButton(buttons).SetText("Lab").SetType(core.ButtonTonal)
 		ctx.LinkButton(cl, "https://cogentcore.org/lab")
-		blog := core.NewButton(buttons).SetText("Blog").SetType(core.ButtonTonal)
-		ctx.LinkButton(blog, "https://cogentcore.org/blog")
+		ca := core.NewButton(buttons).SetText("Apps").SetType(core.ButtonTonal)
+		ctx.LinkButton(ca, "https://cogentcore.org/cogent")
 		return true
 	}
 	ctx.ElementHandlers["color-scheme-control"] = func(ctx *htmlcore.Context) bool {
@@ -98,8 +98,5 @@ func main() {
 		return true
 	}
 
-	b.OnShow(func(e events.Event) {
-		b.Update() // TODO: needed for image sizing on initial load (core/#1037)
-	})
 	b.RunMainWindow()
 }
