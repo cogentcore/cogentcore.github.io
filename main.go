@@ -71,9 +71,16 @@ func main() {
 				return min(uc.Dp(612), uc.Vw(80))
 			})
 		})
+
 		core.NewText(frame).SetType(core.TextHeadlineMedium).SetText(core.AppAbout)
-		bt := core.NewButton(frame).SetText("Learn about the Cogent Core framework")
-		ctx.LinkButton(bt, "https://cogentcore.org/core")
+
+		buttons := core.NewFrame(frame)
+		cc := core.NewButton(buttons).SetText("Cogent Core")
+		ctx.LinkButton(cc, "https://cogentcore.org/core")
+		cl := core.NewButton(buttons).SetText("Cogent Lab").SetType(core.ButtonTonal)
+		ctx.LinkButton(cl, "https://cogentcore.org/lab")
+		blog := core.NewButton(buttons).SetText("Blog").SetType(core.ButtonTonal)
+		ctx.LinkButton(blog, "https://cogentcore.org/blog")
 		return true
 	}
 	ctx.ElementHandlers["color-scheme-control"] = func(ctx *htmlcore.Context) bool {
