@@ -2,7 +2,7 @@ module github.com/cogentcore/cogentcore.github.io
 
 go 1.23.4
 
-require cogentcore.org/core v0.3.12-0.20250715225941-3f13ea4e1cbd
+require cogentcore.org/core v0.3.12-0.20250716185014-9cff12b618f7
 
 require (
 	github.com/Bios-Marcel/wastebasket/v2 v2.0.3 // indirect
@@ -13,7 +13,6 @@ require (
 	github.com/aymerick/douceur v0.2.0 // indirect
 	github.com/chewxy/math32 v1.10.1 // indirect
 	github.com/cogentcore/webgpu v0.23.0 // indirect
-	github.com/cogentcore/yaegi v0.0.0-20250622201820-b7838bdd95eb // indirect
 	github.com/dlclark/regexp2 v1.11.0 // indirect
 	github.com/ericchiang/css v1.3.0 // indirect
 	github.com/fsnotify/fsnotify v1.8.0 // indirect
