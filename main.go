@@ -70,7 +70,7 @@ func main() {
 			})
 		})
 
-		core.NewText(frame).SetType(core.TextHeadlineMedium).SetText(core.AppAbout)
+		core.NewText(frame).SetType(core.TextHeadlineMedium).SetText("A free and open source software ecosystem for all platforms, built around a powerful, fast, elegant framework")
 
 		buttons := core.NewFrame(frame)
 		cc := core.NewButton(buttons).SetText("Core")
