@@ -9,11 +9,11 @@ import (
 	"image/color"
 
 	"cogentcore.org/core/base/errors"
+	"cogentcore.org/core/content"
 	"cogentcore.org/core/core"
 	"cogentcore.org/core/events"
 	"cogentcore.org/core/htmlcore"
 	"cogentcore.org/core/icons"
-	"cogentcore.org/core/pages"
 	"cogentcore.org/core/styles"
 	"cogentcore.org/core/styles/units"
 	"cogentcore.org/core/tree"
@@ -24,49 +24,40 @@ import (
 var resources embed.FS
 
 //go:embed content
-var content embed.FS
+var econtent embed.FS
 
 func main() {
 	b := core.NewBody("Cogent Core")
-	pg := pages.NewPage(b).SetContent(content)
+	ct := content.NewContent(b).SetContent(econtent)
+	ctx := ct.Context
 	b.AddTopBar(func(bar *core.Frame) {
 		tb := core.NewToolbar(bar)
-		tb.Maker(pg.MakeToolbar)
+		tb.Maker(ct.MakeToolbar)
 		tb.Maker(func(p *tree.Plan) {
 			tree.Add(p, func(w *core.Button) {
+				ctx.LinkButton(w, "https://cogentcore.org/blog")
 				w.SetText("Blog").SetIcon(icons.RssFeed)
-				w.OnClick(func(e events.Event) {
-					pg.Context.OpenURL("https://cogentcore.org/blog")
-				})
 			})
 			tree.Add(p, func(w *core.Button) {
+				ctx.LinkButton(w, "https://youtube.com/@CogentCore")
 				w.SetText("Videos").SetIcon(icons.VideoLibrary)
-				w.OnClick(func(e events.Event) {
-					pg.Context.OpenURL("https://youtube.com/@CogentCore")
-				})
 			})
 			tree.Add(p, func(w *core.Button) {
+				ctx.LinkButton(w, "https://github.com/cogentcore")
 				w.SetText("GitHub").SetIcon(icons.GitHub)
-				w.OnClick(func(e events.Event) {
-					pg.Context.OpenURL("https://github.com/cogentcore")
-				})
 			})
 			tree.Add(p, func(w *core.Button) {
+				ctx.LinkButton(w, "/community")
 				w.SetText("Community").SetIcon(icons.Forum)
-				w.OnClick(func(e events.Event) {
-					pg.Context.OpenURL("/community")
-				})
 			})
 			tree.Add(p, func(w *core.Button) {
+				ctx.LinkButton(w, "https://github.com/sponsors/cogentcore")
 				w.SetText("Sponsor").SetIcon(icons.Favorite)
-				w.OnClick(func(e events.Event) {
-					pg.Context.OpenURL("https://github.com/sponsors/cogentcore")
-				})
 			})
 		})
 	})
 
-	htmlcore.ElementHandlers["home-page"] = func(ctx *htmlcore.Context) bool {
+	ctx.ElementHandlers["home-page"] = func(ctx *htmlcore.Context) bool {
 		frame := core.NewFrame(ctx.BlockParent)
 		frame.Styler(func(s *styles.Style) {
 			s.Direction = styles.Column
@@ -87,7 +78,7 @@ func main() {
 		})
 		return true
 	}
-	htmlcore.ElementHandlers["color-scheme-control"] = func(ctx *htmlcore.Context) bool {
+	ctx.ElementHandlers["color-scheme-control"] = func(ctx *htmlcore.Context) bool {
 		type theme struct {
 			Theme core.Themes `default:"Auto"`
 			Color color.RGBA  `default:"#4285f4"`
