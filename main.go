@@ -17,7 +17,6 @@ import (
 	"cogentcore.org/core/styles"
 	"cogentcore.org/core/styles/units"
 	"cogentcore.org/core/tree"
-	_ "cogentcore.org/core/yaegicore"
 )
 
 //go:embed name.png
@@ -73,9 +72,8 @@ func main() {
 			})
 		})
 		core.NewText(frame).SetType(core.TextHeadlineMedium).SetText(core.AppAbout)
-		core.NewButton(frame).SetText("Learn about the Cogent Core framework").OnClick(func(e events.Event) {
-			core.TheApp.OpenURL("https://cogentcore.org/core")
-		})
+		bt := core.NewButton(frame).SetText("Learn about the Cogent Core framework")
+		ctx.LinkButton(bt, "https://cogentcore.org/core")
 		return true
 	}
 	ctx.ElementHandlers["color-scheme-control"] = func(ctx *htmlcore.Context) bool {
