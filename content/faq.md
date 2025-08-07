@@ -1,6 +1,5 @@
 +++
 Name = "FAQ"
-Title = "FAQ"
 Categories = ["Resources"]
 +++
 

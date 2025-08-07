@@ -2,7 +2,7 @@ module github.com/cogentcore/cogentcore.github.io
 
 go 1.23.4
 
-require cogentcore.org/core v0.3.12
+require cogentcore.org/core v0.3.13-0.20250807231547-ae1e4f43215b
 
 require (
 	github.com/Bios-Marcel/wastebasket/v2 v2.0.3 // indirect
