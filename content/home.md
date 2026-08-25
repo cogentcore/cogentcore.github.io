@@ -1,6 +1,0 @@
-+++
-URL = ""
-Title = ""
-+++
-
-<home-page>
