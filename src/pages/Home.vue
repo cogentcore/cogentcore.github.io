@@ -40,9 +40,9 @@ const products = [
 <template>
   <!-- Hero -->
   <section class="flex flex-col items-center justify-center min-h-screen px-6 pt-14 pb-16 text-center">
-    <img src="/icon.svg" alt="Cogent Core" class="w-36 h-36 mb-8" />
-    <img src="/name.png" alt="Cogent Core" class="h-14 mb-8" />
-    <p class="text-lg sm:text-xl text-gray-500 dark:text-gray-400 max-w-2xl leading-relaxed mb-10">
+    <img src="/icon.svg" alt="Cogent Core" class="w-64 h-64 mb-8" />
+    <img src="/name.png" alt="Cogent Core" class="w-[min(612px,80vw)] mb-8" />
+    <p class="text-[28px] leading-[36px] text-gray-900 dark:text-gray-100 max-w-2xl mb-10">
       A cross-platform framework for building powerful, fast, elegant 2D and 3D apps
     </p>
     <div class="flex flex-wrap gap-3 justify-center">
