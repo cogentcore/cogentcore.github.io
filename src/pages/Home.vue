@@ -10,7 +10,7 @@ const features = [
   },
   {
     title: 'Completely customizable',
-    description: 'Allows developers and users to customize apps to fit their needs and preferences through a robust styling system and powerful color settings.',
+    description: 'Allows developers and users to customize apps to fit their needs through a robust styling system and color settings.',
   },
   {
     title: 'Open source',
@@ -22,7 +22,7 @@ const products = [
   {
     name: 'Docs',
     href: 'https://cogentcore.org/core',
-    description: 'Interactive documentation for the cross-platform GUI framework, built with Cogent Core and deployed using WebAssembly.',
+    description: 'Interactive documentation for the framework, built with Cogent Core and deployed using WebAssembly.',
   },
   {
     name: 'Lab',
@@ -32,7 +32,7 @@ const products = [
   {
     name: 'Apps',
     href: 'https://cogentcore.org/cogent',
-    description: 'Apps built with Cogent Core, demonstrating the capabilities of the ecosystem.',
+    description: 'Apps built with Cogent Core.',
   },
 ]
 </script>
@@ -50,13 +50,9 @@ const products = [
         class="px-5 py-2.5 rounded-md bg-brand-blue text-white hover:bg-[#004299] dark:bg-brand-blue-muted dark:text-gray-900 dark:hover:bg-[#C5D8FF] font-medium transition-colors">
         Docs
       </a>
-      <a href="https://cogentcore.org/lab" target="_blank"
+      <a href="https://cogentcore.org/core/install" target="_blank"
         class="px-5 py-2.5 rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 font-medium transition-colors">
-        Lab
-      </a>
-      <a href="https://cogentcore.org/cogent" target="_blank"
-        class="px-5 py-2.5 rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 font-medium transition-colors">
-        Apps
+        Install
       </a>
     </div>
   </section>
