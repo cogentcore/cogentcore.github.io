@@ -32,7 +32,7 @@ const products = [
   {
     name: 'Apps',
     href: 'https://cogentcore.org/cogent',
-    description: 'Apps built with Cogent Core.',
+    description: 'Apps built with Cogent Core, such as Cogent Code, Canvas, Lists, and Files, which run on the web and all platforms, with their documentation.',
   },
 ]
 </script>
@@ -53,6 +53,14 @@ const products = [
       <a href="https://cogentcore.org/core/install" target="_blank"
         class="px-5 py-2.5 rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 font-medium transition-colors">
         Install
+      </a>
+      <a href="https://cogentcore.org/cogent" target="_blank"
+        class="px-5 py-2.5 rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 font-medium transition-colors">
+        Apps
+      </a>
+      <a href="https://cogentcore.org/lab/" target="_blank"
+        class="px-5 py-2.5 rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 font-medium transition-colors">
+        Lab
       </a>
     </div>
   </section>
