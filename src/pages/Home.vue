@@ -58,6 +58,10 @@ const products = [
         class="px-5 py-2.5 rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 font-medium transition-colors">
         Apps
       </a>
+      <a href="https://cogentcore.org/lab/" target="_blank"
+        class="px-5 py-2.5 rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 font-medium transition-colors">
+        Lab
+      </a>
     </div>
   </section>
 
