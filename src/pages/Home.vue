@@ -21,16 +21,19 @@ const features = [
 const products = [
   {
     name: 'Docs',
+    icon: '/icon.svg',
     href: 'https://cogentcore.org/core',
     description: 'Interactive documentation for the framework, built with Cogent Core and deployed using WebAssembly.',
   },
   {
     name: 'Lab',
+    icon: '/lab-icon.svg',
     href: 'https://cogentcore.org/lab',
     description: 'An extensible math, data science, and statistics platform.',
   },
   {
     name: 'Apps',
+    icon: '/icon.svg',
     href: 'https://cogentcore.org/cogent',
     description: 'Apps built with Cogent Core, such as Cogent Code, Canvas, Lists, and Files, which run on the web and all platforms, with their documentation.',
   },
@@ -84,7 +87,8 @@ const products = [
           rel="noopener noreferrer"
           class="group block p-6 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-brand-blue dark:hover:border-brand-blue-muted hover:bg-gray-50 dark:hover:bg-gray-800/40 transition-colors">
           <h3
-            class="font-semibold text-gray-900 dark:text-gray-100 mb-2 group-hover:text-brand-blue dark:group-hover:text-brand-blue-muted transition-colors">
+            class="flex items-center gap-2 font-semibold text-gray-900 dark:text-gray-100 mb-2 group-hover:text-brand-blue dark:group-hover:text-brand-blue-muted transition-colors">
+            <img :src="product.icon" alt="" class="w-7 h-7" />
             {{ product.name }} <span class="text-gray-400 dark:text-gray-500">→</span>
           </h3>
           <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{{ product.description }}</p>
